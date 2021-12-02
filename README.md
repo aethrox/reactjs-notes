@@ -1,1 +1,1 @@
-# reactjs-notes
+# ReactJS Lecture Notes
