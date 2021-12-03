@@ -60,6 +60,11 @@ function App() { // {} içerisine javascript ifademizi yazıyoruz.
   );
 }
 ```
+
+## **Component nedir?**
+
+Componentler, uygulamanızı tekrar kullanılabilir parçalara ayırmanıza ve her bir parçayı ayrı ayrı düşünmenize izin verir. Bu bir buton, bir form, bir diyalog, bir ekran vb. gibi olabilir. 2 tür component vardır. Bunlar fonksiyon component ve class componenttır.
+
 ### *Örnek bir component yapısı*: (Class-Based Component)
 ```jsx
 import React, { Component } from 'react' // içeriye react'ın component sınıfını alıyoruz.
@@ -109,7 +114,7 @@ export default Navbar
 # Props
 
 ## **Props nedir?**
-"props" yapısı bizim verilerimizi bir component'den diğer component'e aktarılmasını sağlar. ve sayfa içerisindeki veri yapılarımızı daha dinamik bir hale getirir.
+"props" yapısı bizim verilerimizi tek bir obje olarak bir component'den diğer component'e aktarılmasını sağlar.
 
 ### **Örnek props kullanımı:**
 ```jsx
