@@ -72,7 +72,7 @@ export default User; // Component sınıfından miras alınmış yeni bir 'User'
 ```jsx
     return ( 
       // stil yapımızı yine HTML içerisindeki gibi fakat '=' ifadesinden sonra '{{}}' yapısının içerisine yazıyoruz aşağıda görüldüğü gibi.. 
-    //'{{}}' ve bu yapımızın ismine "Embedding Expressions" diyoruz.
+      //'{{}}' ve bu yapımızın ismine "Embedding Expressions" diyoruz.
       <div>
         <h1 style={{color: "red", fontSize: "32px"}}>App Component</h1>
       </div>
