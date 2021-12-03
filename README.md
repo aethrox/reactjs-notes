@@ -144,5 +144,12 @@ Navbar.defaultProps  = { //title değerimizin varsayılan değerini belirttik.
 export default Navbar
 ```
 
+# State
+
+## **State nedir?**
+JavaScript’te bir değer saklayacağımız zaman nasıl ki değişken oluşturmak için var-let-const tanımlamalarından yararlanıyorsak, React componentlerinde de değer saklamak için state’ten yararlanırız.
+
+Bir butona tıkladıktan sonra bir değeri güncellemek için, kullanıcı tarafından girilmiş bir input değerini saklamak için veya bir servisten dönen sonucu depolamak/kaydetmek gibi birçok farklı durumda state’i kullanılabiliriz.
+
 #### Önemli bağlantılar:
 [**JSX Emmet support | Medium**]("https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c")
