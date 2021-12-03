@@ -67,7 +67,7 @@ Componentler, uygulamanızı tekrar kullanılabilir parçalara ayırmanıza ve h
 
 ### *Örnek bir component yapısı*: (Class-Based Component)
 ```jsx
-import React, { Component } from 'react' // içeriye react'ın component sınıfını alıyoruz.
+import React, { Component } from 'react'
 
 class User extends Component { // Component yapısı miras alıyoruz.
     render() { // component yapımızı işlemek için fonksiyonumuz.

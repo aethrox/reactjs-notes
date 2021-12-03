@@ -9,20 +9,7 @@ class App extends Component {
       <div className="container">
         <Navbar title="Props App"/>
         <hr />
-        <User
-          name="Kaan"
-          department="Bilişim"
-          salary="6.000 $"
-        />
-        <User
-          name="Ahmet"
-          department="Cyber Security Analyst"
-        />
-        <User
-          name="Cüneyt"
-          department="Designer"
-          salary="8.000 $"
-        />
+        
       </div>
     );
   }
