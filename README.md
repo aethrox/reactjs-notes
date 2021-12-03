@@ -48,3 +48,22 @@ function App() { // {} içerisine javascript ifademizi yazıyoruz.
   );
 }
 ```
+### *Örnek bir component yapısı*:
+```jsx
+import React, { Component } from 'react' // içeriye react'ın component sınıfını alıyoruz.
+
+class User extends Component { // Component yapısı miras alıyoruz.
+    render() { // component yapımızı işlemek için fonksiyonumuz.
+        return ( // JSX yapımızı geriye döndüyoruz.
+            <div>
+                <form>
+                    <input type="text"></input>
+                    <button>Gönder</button>
+                </form>
+            </div>
+        )
+    }
+}
+
+export default User; // ve Component sınıfından miras alınmış yeni bir 'User' component (class) yapımızı dışarıya aktarıyoruz. 
+```
