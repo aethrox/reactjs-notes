@@ -25,3 +25,12 @@ Doğrusu:
 <div class="div">Div</div> // Hata verir.
 <div className="div">Div</div> // JSX için doğru syntax.
 ```
+
+#### ***JSX ifadeleri içerisinde javascript ifadeleri kullanımı:***
+```jsx
+  return ( // {} arasına javascript ifademizi yazıyoruz.
+    <div className="App">
+    <p> {1+1} </p>
+    </div>
+  );
+```
