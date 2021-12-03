@@ -165,6 +165,35 @@ JavaScript’te bir değer saklayacağımız zaman nasıl ki değişken oluştur
 
 Bir butona tıkladıktan sonra bir değeri güncellemek için, kullanıcı tarafından girilmiş bir input değerini saklamak için veya bir servisten dönen sonucu depolamak/kaydetmek gibi birçok farklı durumda state’i kullanılabiliriz.
 
+## **State Oluşturma:**
+```jsx
+class User extends Component {
+
+    //  state oluşturma 1.yöntem
+    // constructor(props){ // Ask google "what is javascript constructor"
+    //     super(props);
+    //     this.state = {
+    //       title: "State"
+    //     }
+    // }
+
+    // state oluşturma 2.yöntem
+    // her iki seçenekte kullanılabilir.
+    state = {
+        title: "State"
+    }
+
+    render() {
+        const { title } = this.state;
+        return ( 
+            <div className="col-md-8 mb-4">
+            <h1>Hello {title}!</h1>
+            </div>
+        )
+    }
+}
+export default User;
+```
 
 
 #### Önemli bağlantılar:
