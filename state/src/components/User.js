@@ -24,7 +24,7 @@ class User extends Component {
     //     super(props);
     //     this.onClickEvent = this.onClickEvent.bind(this)
     // }
-    // arrow function
+    //3. arrow function
 
     render() {
         const { name, department, salary} = this.props;
