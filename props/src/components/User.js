@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 
 class User extends Component {
     render() {
+        const { name, department, salary} = this.props;
         return (
             <div>
                 <ul>
-                    <li>İsim: Kaan</li>
-                    <li>Departman: Bilişim</li>
-                    <li>Maaş: 6000</li>
+                    <li>İsim: {name}</li>
+                    <li>Departman: {department}</li>
+                    <li>Maaş: {salary}</li>
                 </ul>
             </div>
         )
