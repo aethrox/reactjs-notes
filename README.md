@@ -158,5 +158,7 @@ JavaScript’te bir değer saklayacağımız zaman nasıl ki değişken oluştur
 
 Bir butona tıkladıktan sonra bir değeri güncellemek için, kullanıcı tarafından girilmiş bir input değerini saklamak için veya bir servisten dönen sonucu depolamak/kaydetmek gibi birçok farklı durumda state’i kullanılabiliriz.
 
+
+
 #### Önemli bağlantılar:
 [**JSX Emmet support | Medium**]("https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c")
