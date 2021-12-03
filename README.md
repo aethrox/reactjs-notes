@@ -65,5 +65,5 @@ class User extends Component { // Component yapısı miras alıyoruz.
     }
 }
 
-export default User; // ve Component sınıfından miras alınmış yeni bir 'User' component (class) yapımızı dışarıya aktarıyoruz. 
+export default User; // Component sınıfından miras alınmış yeni bir 'User' component (class) yapımızı dışarıya aktarıyoruz. 
 ```
