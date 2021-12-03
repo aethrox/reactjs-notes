@@ -1,5 +1,7 @@
 ### ReactJS Lecture Notes
 
+![reactlogo](jsx-and-components/src/logo.svg)
+
 # React Nedir?
 
 React bir JavaScript kütüphanesi olup web uygulamaları için hızlı ve interaktif kullanıcı arayüzleri oluşturmada kullanılır.
