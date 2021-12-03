@@ -98,7 +98,7 @@ export default Navbar
 ```
 
 # Props
----
+
 ## **Props nedir?**
 "props" yapısı bizim verilerimizi bir component'den diğer component'e aktarılmasını sağlar. ve sayfa içerisindeki veri yapılarımızı daha dinamik bir hale getirir.
 
