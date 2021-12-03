@@ -1,6 +1,8 @@
-### ReactJS Lecture Notes
+<h1 align="center">ReactJS Lecture Notes</h1>
 
-![reactlogo](jsx-and-components/src/logo.svg)
+<p align="center">
+  <img src="jsx-and-components/public/logo192.png" />
+</p>
 
 # React Nedir?
 
