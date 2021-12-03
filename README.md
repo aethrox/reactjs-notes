@@ -169,31 +169,51 @@ Bir butona tıkladıktan sonra bir değeri güncellemek için, kullanıcı taraf
 ```jsx
 class User extends Component {
 
-    //  state oluşturma 1.yöntem
-    // constructor(props){ // Ask google "what is javascript constructor"
-    //     super(props);
-    //     this.state = {
-    //       title: "State"
-    //     }
-    // }
+  //  state oluşturma 1.yöntem
+  // constructor(props){ // Ask google "what is javascript constructor"
+  //     super(props);
+  //     this.state = {
+  //       title: "State"
+  //     }
+  // }
 
-    // state oluşturma 2.yöntem
-    // her iki seçenekte kullanılabilir.
-    state = {
-        title: "State"
-    }
+  // state oluşturma 2.yöntem
+  // her iki seçenekte kullanılabilir.
+  state = {
+      title: "State"
+  }
 
-    render() {
-        const { title } = this.state;
-        return ( 
-            <div className="col-md-8 mb-4">
-            <h1>Hello {title}!</h1>
-            </div>
-        )
-    }
+  render() {
+      const { title } = this.state;
+      return ( 
+          <div className="col-md-8 mb-4">
+          <h1>Hello {title}!</h1>
+          </div>
+      )
+  }
 }
 export default User;
 ```
+
+## **Events:**
+```jsx
+class User extends Component {
+  onClickEvent(e){ //event içerisinden gelen parametremiz
+    console.log(e) //buradan neler geldiğini görebiliriz.
+    console.log("Clicked!")
+  }
+
+  render() {
+      return ( 
+          <div className="col-md-8 mb-4">
+            <h1>Hello Event!</h1>
+            <button onClick={this.onClickEvent}></button>
+          </div>
+      )
+  }
+}
+export default User;
+````
 
 
 #### Önemli bağlantılar:
