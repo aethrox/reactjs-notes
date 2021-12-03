@@ -1,6 +1,6 @@
-# ReactJS Lecture Notes
+### ReactJS Lecture Notes
 
-## JSX ve Component
+# JSX ve Component
 ---
 
 >### Not: JSX geriye yanlızca 1 tane parent element döndürebilir.!
@@ -97,7 +97,7 @@ export default Navbar
     );
 ```
 
-## Props
+# Props
 ---
 ## **Props nedir?**
 "props" yapısı bizim verilerimizi bir component'den diğer component'e aktarılmasını sağlar. ve sayfa içerisindeki veri yapılarımızı daha dinamik bir hale getirir.
