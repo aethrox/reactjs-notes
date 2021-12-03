@@ -119,5 +119,30 @@ function Navbar(props){
 }
 ```
 
+## **Default props ve PropTypes**
+* propTypes - Verinin tipini ve gereklimi gereksizmi olduğunu belirtmek için kullanılıyor.
+* defaultProps - Verilerin varsayılan değerlerini ayarlamak için kullanılıyor.
+```jsx
+import React from 'react';
+import PropTypes from 'prop-types';
+
+function Navbar(props){
+    return (
+        <div>
+            <h3>Props içerisindeki title değerimiz: {props.title}</h3>
+        </div>
+    )
+}
+
+Navbar.propTypes = { //title değerimizin gerekliliğini yani zorunluluğunu belirttik.
+    title: PropTypes.string.isRequired
+}
+
+Navbar.defaultProps  = { //title değerimizin varsayılan değerini belirttik.
+    title: "Default App"
+}
+export default Navbar
+```
+
 #### Önemli bağlantılar:
 [**JSX Emmet support | Medium**]("https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c")
