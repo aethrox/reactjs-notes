@@ -17,7 +17,6 @@ class App extends Component {
         <User
           name="Ahmet"
           department="Cyber Security Analyst"
-          salary="10.000 $"
         />
         <User
           name="Cüneyt"
