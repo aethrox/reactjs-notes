@@ -1,6 +1,9 @@
 # ReactJS Lecture Notes
 
->### Not: JSX geriye yanlızca 1 tane parent element dönebilir.!
+## JSX ve Component
+---
+
+>### Not: JSX geriye yanlızca 1 tane parent element döndürebilir.!
 *Yanlış*:
 ```jsx
   return (
@@ -93,3 +96,28 @@ export default Navbar
       </div>
     );
 ```
+
+## Props
+---
+## **Props nedir?**
+"props" yapısı bizim verilerimizi bir component'den diğer component'e aktarılmasını sağlar. ve sayfa içerisindeki veri yapılarımızı daha dinamik bir hale getirir.
+
+### **Örnek props kullanımı:**
+```jsx
+//App.js
+<Navbar title="User App"/> 
+//buradaki "Navbar" bir component. "title" kısmı bizim anahtar kelimemiz (key) "User App" ise verimiz (value)
+//verimizi diğer component yapımıza aktardığımıza göre şimdi birde nasıl kullanıldığına bakalım.
+
+//Navbar.js
+function Navbar(props){
+    return ( // gördüğünüz gibi props yapımızı bir parametre olarak aldık.
+        <div>
+            <h3>Props içerisindeki title değerimiz: {props.title}</h3>
+        </div>
+    )
+}
+```
+
+#### Önemli bağlantılar:
+[**JSX Emmet support | Medium**]("https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c")
