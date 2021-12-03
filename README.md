@@ -10,7 +10,9 @@ React, Jordan Walke adında Facebook’ta çalışan bir yazılım mühendisi ta
 
 # JSX ve Component
 
->### Not: JSX geriye yanlızca 1 tane parent element döndürebilir.!
+JSX, JavaScript ve XML kelimelerinin baş harflerinden elde edilen akronim bir kelimedir. JSX 'in temel kullanım amacı, javascript dosyalarının içinde HTML kodu yazarak daha görsel bir kod kullanımı sağlamaktır.
+
+>#### Not: JSX geriye yanlızca 1 tane parent element döndürebilir.!
 *Yanlış*:
 ```jsx
   return (
