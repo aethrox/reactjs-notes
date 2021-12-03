@@ -1,7 +1,7 @@
 # ReactJS Lecture Notes
 
 >### Not: JSX geriye yanlızca 1 tane parent element dönebilir.!
-Yanlış bir örnek:
+*Yanlış*:
 ```jsx
   return (
     <div className="App">
@@ -10,7 +10,7 @@ Yanlış bir örnek:
     <h2>Hello World! 2</h2>
   );
 ```
-Doğrusu:
+*Doğru*:
 ```jsx
   return (
     <div className="App">
@@ -20,17 +20,31 @@ Doğrusu:
   );
 ```
 
-#### **JSX içerisinde normal HTML özellikleri syntax olarak farklı..** Örnek:
+#### **JSX içerisinde normal HTML özellikleri syntax olarak farklı..**
+*Örnek*:
 ```jsx
 <div class="div">Div</div> // Hata verir.
 <div className="div">Div</div> // JSX için doğru syntax.
 ```
 
-#### ***JSX ifadeleri içerisinde javascript ifadeleri kullanımı:***
+#### ***JSX ifadeleri içerisinde javascript ifadeleri kullanımı.***
+*Örnek*:
 ```jsx
-  return ( // {} arasına javascript ifademizi yazıyoruz.
+function App() { // {} içerisine javascript ifademizi yazıyoruz.
+  const test = 33;
+  const isAuth = true;
+  return (
     <div className="App">
-    <p> {1+1} </p>
+      <h1>Hello World! JSX and Component</h1>
+      {1+1}
+      <h2>{"Hello".toUpperCase()}</h2>
+      <h2>{test}</h2>
+      <div>
+        {
+          isAuth ? <p>Kullanıcı doğrulandı!</p> : null //<p>Kullanıcı Doğrulanamadı!</p>
+        }
+      </div>
     </div>
   );
+}
 ```
