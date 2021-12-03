@@ -48,7 +48,7 @@ function App() { // {} içerisine javascript ifademizi yazıyoruz.
   );
 }
 ```
-### *Örnek bir component yapısı*:
+### *Örnek bir component yapısı*: (Class-Based Component)
 ```jsx
 import React, { Component } from 'react' // içeriye react'ın component sınıfını alıyoruz.
 
@@ -66,6 +66,21 @@ class User extends Component { // Component yapısı miras alıyoruz.
 }
 
 export default User; // Component sınıfından miras alınmış yeni bir 'User' component (class) yapımızı dışarıya aktarıyoruz. 
+```
+
+### *Örnek bir component yapısı*: (Function-Based Component)
+```jsx
+import React from 'react';
+
+function Navbar(){ //Eğer component yapımız sabit bir yapı olacaksa yani herhangi bir state barındırmayacak ise "function-based" component yapısı kullanmamız çok daha sağlıklı olur.
+    return (
+        <div>
+            <h3>User App</h3>
+        </div>
+    )
+}
+
+export default Navbar
 ```
 
 ### Örnek bir stil ekleme işlemi:
