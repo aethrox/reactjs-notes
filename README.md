@@ -195,7 +195,7 @@ class User extends Component {
 export default User;
 ```
 
-## **Events:**
+## **Example Events:**
 ```jsx
 class User extends Component {
   onClickEvent(e){ //event içerisinden gelen parametremiz
@@ -213,8 +213,41 @@ class User extends Component {
   }
 }
 export default User;
-````
+```
 
+## **Event ile State değiştirme:**
+```jsx
+class User extends Component {
+  state = {
+      isVisible: false
+  }
+
+  onClickEvent = (e) => { 
+    // arrow function kullandığımız için ayrıca bir bind() yazmamız gerekmiyor. 
+    // Normal fonksiyon ile arrow fonksiyon arasındaki önemli ve ince bir ayrıntıdır bu..
+    this.setState({
+        isVisible: !this.state.isVisible
+    })
+  }
+
+  render() {
+      const { isVisible } = this.state;
+      return ( 
+          <div className="col-md-8 mb-4">
+            <div className="card" onClick={this.onClickEvent}>
+              <div className="card-header d-flex justify-content-between">
+                <h4 className="d-inline">Açılır kapanır menü</h4>
+              </div>
+                {
+                  isVisible ? <h2>Hello!</h2> : null
+                }
+              </div>
+          </div>
+      )}
+}
+export default User;
+```
+> **Not**: Binding konusu çok önemli bir rol oynuyor yukarıdaki "this" kısmında.
 
 #### Önemli bağlantılar:
 - [**JSX Emmet support | Medium**](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
