@@ -1,7 +1,14 @@
 ### ReactJS Lecture Notes
 
+# React Nedir?
+
+React bir JavaScript kütüphanesi olup web uygulamaları için hızlı ve interaktif kullanıcı arayüzleri oluşturmada kullanılır.
+
+Açık kaynak kodlu, bileşen bazlı ve front-end bir kütüphane olan React, sadece uygulamanın görünüm katmanından sorumludur.
+
+React, Jordan Walke adında Facebook’ta çalışan bir yazılım mühendisi tarafından geliştirilmiştir.
+
 # JSX ve Component
----
 
 >### Not: JSX geriye yanlızca 1 tane parent element döndürebilir.!
 *Yanlış*:
