@@ -168,7 +168,5 @@ Bir butona tıkladıktan sonra bir değeri güncellemek için, kullanıcı taraf
 
 
 #### Önemli bağlantılar:
-[JSX Emmet support | Medium]("https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c")
-
-[I'm an inline-style link](https://www.google.com)
+[**JSX Emmet support | Medium**](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
 
