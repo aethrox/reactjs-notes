@@ -272,6 +272,12 @@ Aktarılmak istenen değerleri global şekilde tutar ve direkt olarak kullanılm
 
 > **Redux** - *"Büyük ölçekli" uygulamalarda kullanılabilir.*
 
+### Context API Kavramları:
+* Provider - Üretici
+* Consumer - Tüketici
+
+
+
 #### Önemli bağlantılar:
 - [**JSX Emmet support | Medium**](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
 
