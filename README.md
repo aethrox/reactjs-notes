@@ -264,7 +264,7 @@ Prop drilling, bir state’in, component ağacımızın daha yukarısında bulun
 ## Context API Nedir?
 Aktarılmak istenen değerleri global şekilde tutar ve direkt olarak kullanılması gereken component’e aktarılmasını sağlar. Böylelikle bir state’i, component ağacının altlarında bulunan bir component’e aktarmak istediğiniz zaman, her seferinde props olarak göndermenize gerek kalmaz.
 
-![context-api](img/context-api.png)
+![context-api](img/context-api.PNG)
 
 > **Props** - *"Ufak ölçekli" uygulamalarda kullanılabilir.*
 
