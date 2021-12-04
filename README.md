@@ -253,6 +253,25 @@ export default User;
 ```
 > **Not**: Binding konusu çok önemli bir rol oynuyor yukarıdaki "this" kısmında.
 
+# State Managment (ContextAPI)
+
+## Sorun 🔧
+React, Context API ile prop drilling denen sorunun önüne geçmeyi amaçlanmaktadır.
+
+## Prop Drilling Nedir ?
+Prop drilling, bir state’in, component ağacımızın daha yukarısında bulunan bir parent component’ten, component ağacımızın altlarında bulunan bir child component’e props yoluyla aktarılarak state’in ulaştırılmasına denir. Buradaki sorun, state yukarıdan aşağıya doğru aktarılırken, arada köprü olarak kullandığımız componentlerin sadece bu değeri ulaştırmak için gereksiz yere kullanılıyor olmasıdır.
+
+## ContextAPI Nedir?
+Aktarılmak istenen değerleri global şekilde tutar ve direkt olarak kullanılması gereken component’e aktarılmasını sağlar. Böylelikle bir state’i, component ağacının altlarında bulunan bir component’e aktarmak istediğiniz zaman, her seferinde props olarak göndermenize gerek kalmaz.
+
+![context-api](img/context-api.png)
+
+> **Props** - *"Ufak ölçekli" uygulamalarda kullanılabilir.*
+
+> **Context API** - *"Orta ölçekli" uygulamalarda kullanılabilir.*
+
+> **Redux** - *"Büyük ölçekli" uygulamalarda kullanılabilir.*
+
 #### Önemli bağlantılar:
 - [**JSX Emmet support | Medium**](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
 
