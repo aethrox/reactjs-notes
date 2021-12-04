@@ -67,7 +67,7 @@ function App() { // {} içerisine javascript ifademizi yazıyoruz.
 
 ## **Component nedir?**
 
-Componentler, uygulamanızı tekrar kullanılabilir parçalara ayırmanıza ve her bir parçayı ayrı ayrı düşünmenize izin verir. Bu bir buton, bir form, bir diyalog, bir ekran vb. gibi olabilir. 2 tür component vardır. Bunlar fonksiyon component ve class componenttır.
+Componentler, uygulamanızı tekrar kullan  ılabilir parçalara ayırmanıza ve her bir parçayı ayrı ayrı düşünmenize izin verir. Bu bir buton, bir form, bir diyalog, bir ekran vb. gibi olabilir. 2 tür component vardır. Bunlar fonksiyon component ve class componenttır.
 
 ### *Örnek bir component yapısı*: (Class-Based Component)
 ```jsx

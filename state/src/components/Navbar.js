@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Navbar(props){
     return ( // gördüğünüz gibi props yapımızı bir parametre olarak aldık.
         <div>
-            <h3>Props içerisindeki title değerimiz: {props.title}</h3>
+            <h3>{props.title}</h3>
         </div>
     )
 }
