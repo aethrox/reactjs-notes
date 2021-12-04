@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import UserConsumer from '../context'
 
 class User extends Component {
 
@@ -19,6 +20,11 @@ class User extends Component {
         })
     }
 
+    onDeleteUser = (dispatch, e) => {
+        const { id } = this.props;
+        dispatch({type: 'deleteUser', payload: id})
+    }
+
     //1. this.onClickEvent.bind(this),
     //2. constructor(props){
     //     super(props);
@@ -27,28 +33,42 @@ class User extends Component {
     //3. arrow function
 
     render() {
-        const { name, department, salary} = this.props;
+        const { name, department, salary } = this.props;
         const { isVisible } = this.state;
-        return ( 
-            <div className="col-md-8 mb-4">
-                <div className="card" onClick={this.onClickEvent}>
-                    <div className="card-header d-flex justify-content-between">
-                        <h4 className="d-inline">{name}</h4>
-                        <i className="far fa-trash-alt" style={{cursor: 'pointer'}}></i>
-                    </div>
-                    {
-                        isVisible ? <div className="card-body">
-                        <p className="card-text">Departman: {department}</p>
-                        <p className="card-text">Maaş: {salary}</p>
-                        </div> : null
+        return (
+            <UserConsumer>
+                {
+                    value => {
+                        const { dispatch } = value;
+                        return (
+                            <div className="col-md-8 mb-4">
+                                <div className="card" onClick={this.onClickEvent}>
+                                    <div className="card-header d-flex justify-content-between">
+                                        <h4 className="d-inline">{name}</h4>
+                                        <i
+                                        onClick={this.onDeleteUser.bind(this,dispatch)}
+                                        className="far fa-trash-alt" 
+                                        style={{ cursor: 'pointer' }}
+                                        ></i>
+                                    </div>
+                                    {
+                                        isVisible ? <div className="card-body">
+                                            <p className="card-text">Departman: {department}</p>
+                                            <p className="card-text">Maaş: {salary}</p>
+                                        </div> : null
+                                    }
+                                </div>
+                            </div>
+                        )
                     }
-                </div>
-            </div>
+                }
+            </UserConsumer>
         )
     }
 }
 
 User.propTypes = {
+    id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     department: PropTypes.string.isRequired,
     salary: PropTypes.string.isRequired
