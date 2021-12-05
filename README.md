@@ -276,6 +276,8 @@ Aktarılmak istenen değerleri global şekilde tutar ve direkt olarak kullanılm
 * Provider - Üretici
 * Consumer - Tüketici
 
+#### Context konusu için en iyi kaynak:
+[**Context API**](https://tr.reactjs.org/docs/context.html)
 
 
 #### Önemli bağlantılar:
