@@ -280,4 +280,5 @@ Aktarılmak istenen değerleri global şekilde tutar ve direkt olarak kullanılm
 
 #### Önemli bağlantılar:
 - [**JSX Emmet support | Medium**](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
+- [**React Simple Animation Library | React-Pose**](https://popmotion.io/pose/learn/get-started/)
 
