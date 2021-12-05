@@ -19,7 +19,10 @@ const Animation = posed.div({
 export default class AddUser extends React.Component {
 
   state = {
-    visible: false
+    visible: false,
+    name: "",
+    department: "",
+    salary: ""
   }
 
   changeVisiblyt = (e) => {
@@ -28,8 +31,15 @@ export default class AddUser extends React.Component {
     })
   }
 
+  changeInput = (e) => {
+    this.setState({
+      //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+      [e.target.name]: e.target.value
+    })
+  }
+
   render() {
-    const { visible } = this.state
+    const { visible, name, department, salary} = this.state
     return (
       <div className="col-md-8 mb-4">
           <div className="d-grid gap-2 mb-2">
@@ -49,7 +59,10 @@ export default class AddUser extends React.Component {
                     name="name"
                     id="id"
                     placeholder="Enter Name"
-                    className="form-control" />
+                    className="form-control" 
+                    value = { name }
+                    onChange = { this.changeInput }
+                    />
                 </div>
                 <div className="form-group mb-2">
                   <label htmlFor="department" className="form-label">Department:</label>
@@ -58,7 +71,10 @@ export default class AddUser extends React.Component {
                     name="department"
                     id="id"
                     placeholder="Enter Department"
-                    className="form-control" />
+                    className="form-control" 
+                    value={ department }
+                    onChange = { this.changeInput }
+                    />
                 </div>
                 <div className="form-group mb-2">
                   <label htmlFor="salary" className="form-label">Salary:</label>
@@ -67,7 +83,10 @@ export default class AddUser extends React.Component {
                     name="salary"
                     id="id"
                     placeholder="Enter Salary"
-                    className="form-control" />
+                    className="form-control" 
+                    value={ salary }
+                    onChange = { this.changeInput }
+                    />
                 </div>
               </form>
               <div className="d-grid gap-2">

@@ -42,7 +42,9 @@ class User extends Component {
                         const { dispatch } = value;
                         return (
                             <div className="col-md-8 mb-4">
-                                <div className="card" onClick={this.onClickEvent}>
+                                <div className="card" 
+                                onClick={this.onClickEvent} 
+                                style={isVisible ? {background: "#3954a5", color: "white"} : null}>
                                     <div className="card-header d-flex justify-content-between">
                                         <h4 className="d-inline">{name}</h4>
                                         <i
