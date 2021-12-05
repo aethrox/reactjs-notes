@@ -8,7 +8,7 @@ const reducer = (state, action) => {
     switch(action.type){
         case "deleteUser":
             return {
-                ...state,
+                // ...state,
                 users: state.users.filter(user => action.payload !== user.id)
             }
         default: 
