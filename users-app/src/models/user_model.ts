@@ -1,12 +1,26 @@
+import {combineReducers} from 'redux'
 interface UserModel {
+  id: string
   firstname: string
   lastname: string
   phoneNumber: string
   age: number
 }
 
+const initialStateUser : UserModel = {
+  id: "",
+  firstname: "Bilinmiyor",
+  lastname: "Bilinmiyor",
+  phoneNumber: "Bilinmiyor",
+  age: 0
+}
+
 interface UsersModel {
-  users: object
+  users: []
+}
+
+const initialStateUsers : UsersModel = {
+  users: []
 }
 
 export const ADD_USER = "ADD_USER";
@@ -24,26 +38,23 @@ interface DelUser {
 
 export type userAction = AddUser | DelUser
 
-const initialStateUser : UserModel = {
-  firstname: "Bilinmiyor",
-  lastname: "Bilinmiyor",
-  phoneNumber: "Bilinmiyor",
-  age: 0
-}
-
-
-const initialStateUsers : UsersModel = {
-  users: {}
-}
-
 const UserReducer = (state: UsersModel = initialStateUsers, action: userAction)=> {
   switch (action.type) {
     case ADD_USER:
       return {
-        users: []
+        users: [...state.users, action.payload]
       }
-  
+    case DEL_USER:
+      return {
+        users: state.users.filter(user => action.payload !== user.id);
+      }
     default:
-      return state
+      return state;
   }
 }
+
+const rootReducer = combineReducers({
+  user: UserReducer
+});
+
+export default rootReducer;

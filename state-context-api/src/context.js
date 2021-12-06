@@ -8,7 +8,6 @@ const reducer = (state, action) => {
     switch(action.type){
         case "deleteUser":
             return {
-                ...state,
                 users: state.users.filter(user => action.payload !== user.id)
             }
         case "addUser":
