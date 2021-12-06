@@ -1,26 +1,34 @@
 import {combineReducers} from 'redux'
-interface UserModel {
-  id: string
-  firstname: string
-  lastname: string
-  phoneNumber: string
-  age: number
-}
+// interface UserModel {
+//   id: string
+//   firstname: string
+//   lastname: string
+//   phoneNumber: string
+//   age: number
+// }
 
-const initialStateUser : UserModel = {
-  id: "",
-  firstname: "Bilinmiyor",
-  lastname: "Bilinmiyor",
-  phoneNumber: "Bilinmiyor",
-  age: 0
-}
+// const initialStateUser : UserModel = {
+//   id: "",
+//   firstname: "Bilinmiyor",
+//   lastname: "Bilinmiyor",
+//   phoneNumber: "Bilinmiyor",
+//   age: 0
+// }
 
 interface UsersModel {
-  users: []
+  users: [{}]
 }
 
 const initialStateUsers : UsersModel = {
-  users: []
+  users: [
+    {
+      id: "1",
+      firstname: "Ahmet",
+      lastname: "ateş",
+      phoneNumber: "324807498237",
+      age: 19
+    }
+  ]
 }
 
 export const ADD_USER = "ADD_USER";
@@ -46,7 +54,7 @@ const UserReducer = (state: UsersModel = initialStateUsers, action: userAction)=
       }
     case DEL_USER:
       return {
-        users: state.users.filter(user => action.payload !== user.id);
+        users: state.users.filter(user => action.payload !== user)
       }
     default:
       return state;

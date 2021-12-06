@@ -5,7 +5,7 @@ import Users from './component/Users';
 export default class App extends Component {
   render() {
     return (
-      <div className="container ">
+      <div className="container">
         <UserAdd />
         <hr />
         <Users />
