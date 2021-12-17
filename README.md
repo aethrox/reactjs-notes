@@ -267,15 +267,24 @@ import { useState } from 'react';
 export default function App() {
   const [username, setUsername] = useState("innthered");
   const [age, setAge] = useState(20);
+  const [items, setItems] = useState(["item1", "item2", "item3"])
 
   return (
     <div className="App">
       <header className="App-body">
         <h2>Username: {username}</h2>
         <h2>Age: {age}</h2>
+        <ol>
+          {
+            items.map(item => (
+              <li>{item}</li>
+            ))
+          }
+        </ol>
         <br />
         <button onClick={_ => setUsername('TEST')}>Change Username</button>
-        <button onClick={_ =>setAge(25)}>Change Age</button>
+        <button onClick={_ => setAge(25)}>Change Age</button>
+        <button onClick={_ => setItems([...items, "item4"])}>Add item</button>
       </header>
     </div>
   );
