@@ -256,6 +256,32 @@ export default User;
 ```
 > **Not**: Binding konusu çok önemli bir rol oynuyor yukarıdaki "this" kısmında.
 
+## useState Nedir?
+
+Herhangi oluşturduğumuz bir 'useState' function yapısı içerisine verdiğimiz değeri component'imizin içerisinde kullanmamızı ve kolay bir şekilde değiştirmemize olanak sağlar.
+
+*Örnek kullanım:*
+```jsx
+import { useState } from 'react';
+
+export default function App() {
+  const [username, setUsername] = useState("innthered");
+  const [age, setAge] = useState(20);
+
+  return (
+    <div className="App">
+      <header className="App-body">
+        <h2>Username: {username}</h2>
+        <h2>Age: {age}</h2>
+        <br />
+        <button onClick={_ => setUsername('TEST')}>Change Username</button>
+        <button onClick={_ =>setAge(25)}>Change Age</button>
+      </header>
+    </div>
+  );
+}
+```
+
 # State Managment (ContextAPI)
 
 ## Sorun 🔧
