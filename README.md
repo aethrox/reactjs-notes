@@ -326,3 +326,6 @@ Aktarılmak istenen değerleri global şekilde tutar ve direkt olarak kullanılm
 - [**React Simple Animation Library | React-Pose**](https://popmotion.io/pose/learn/get-started/)
 - [**React Uniq ID Generator Library**](https://www.npmjs.com/package/uniqid)
 
+#### Önemli Ek Araştırmalar:
+- ReactJS and jQuery Re-Rendering
+
