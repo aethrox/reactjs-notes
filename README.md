@@ -294,6 +294,29 @@ export default function App() {
 }
 ```
 
+*Input ile useState kullanımı:*
+```jsx
+import { useState } from 'react';
+
+export default function App() {
+  const [user, setUser] = useState({ firstname: "John", lastname: "Doe" });
+
+  const changeState = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value })
+  }
+
+  return (
+    <div className="App">
+      <h2>{user.firstname}</h2>
+      <h2>{user.lastname}</h2>
+      <br />
+      <input name="firstname" value={user.firstname} onChange={changeState} />
+      <input name="lastname" value={user.lastname} onChange={changeState} />
+    </div>
+  );
+}
+```
+
 # State Managment (ContextAPI)
 
 ## Sorun 🔧
