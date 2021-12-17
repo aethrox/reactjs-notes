@@ -268,6 +268,7 @@ export default function App() {
   const [username, setUsername] = useState("innthered");
   const [age, setAge] = useState(20);
   const [items, setItems] = useState(["item1", "item2", "item3"])
+  const [adress, setAdress] = useState({title: "Mersin", zip: 11111})
 
   return (
     <div className="App">
@@ -281,10 +282,12 @@ export default function App() {
             ))
           }
         </ol>
+        <h3>Adress: { adress.title } { adress.zip }</h3>
         <br />
         <button onClick={_ => setUsername('TEST')}>Change Username</button>
         <button onClick={_ => setAge(25)}>Change Age</button>
         <button onClick={_ => setItems([...items, "item4"])}>Add item</button>
+        <button onClick={_ => setAdress({...adress, title: "Ankara"})}>Change Adress</button>
       </header>
     </div>
   );
