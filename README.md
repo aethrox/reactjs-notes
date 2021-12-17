@@ -140,6 +140,8 @@ function Navbar(props){
 ## **Default props ve PropTypes**
 * propTypes - Verinin tipini ve gereklimi gereksizmi olduğunu belirtmek için kullanılıyor.
 * defaultProps - Verilerin varsayılan değerlerini ayarlamak için kullanılıyor.
+* oneOfType - Birden fazla veri tipini uygulamak için kullanılıyor.
+* shape - Bir objemizin altında bulunan verilerimizin tipini belirlemek için kullanılıyor.
 ```jsx
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -153,7 +155,8 @@ function Navbar(props){
 }
 
 Navbar.propTypes = { //title değerimizin gerekliliğini yani zorunluluğunu belirttik.
-    title: PropTypes.string.isRequired
+    // title: PropTypes.string.isRequired
+    title: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 }
 
 Navbar.defaultProps  = { //title değerimizin varsayılan değerini belirttik.
