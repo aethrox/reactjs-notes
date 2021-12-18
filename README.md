@@ -256,6 +256,8 @@ export default User;
 ```
 > **Not**: Binding konusu çok önemli bir rol oynuyor yukarıdaki "this" kısmında.
 
+# Hooks
+
 ## useState Nedir?
 
 Herhangi oluşturduğumuz bir 'useState' function yapısı içerisine verdiğimiz değeri component'imizin içerisinde kullanmamızı ve kolay bir şekilde değiştirmemize olanak sağlar.
@@ -312,6 +314,45 @@ export default function App() {
       <br />
       <input name="firstname" value={user.firstname} onChange={changeState} />
       <input name="lastname" value={user.lastname} onChange={changeState} />
+    </div>
+  );
+}
+```
+
+## useEffect nedir?
+
+Component'imiz üzerinde gerçekleşen "Mount", "Unmount", "Render" gibi lifecycle olaylarını yakalamamızı sağlar.
+
+*Örnek kullanımlar:*
+```jsx
+import { useState, useEffect } from 'react';
+
+export default function App() {
+  const [username, setUser] = useState("John Doe");
+
+  const changeState = (e) => {
+    setUser(e.target.value)
+  }
+
+  useEffect(() => {
+    console.log("Render!") // Render işlemini böyle yakalıyoruz.
+  })
+
+  useEffect(() => {
+    console.log("Mount!") // Mount işlemini böyle yakalıyoruz.
+
+    //return () => console.log("Unmount!") "Unmount işlemini böyle yakalıyoruz."
+  }, []) // buradaki köşeli parantez gerçekleşen mount ve unmount olaylarını yakala demek oluyor.
+
+  useEffect(() => {
+    console.log("Username Changed!") // Belirli bir state'in tekrar render edilme sürecini böyle yakalıyoruz.
+  }, [username]) // buradaki köşeli parantez 'username' state'imiz değiştiğinde yakala demek oluyor.
+
+  return (
+    <div className="App">
+      <h2>{username}</h2>
+      <br />
+      <input name="firstname" value={username} onChange={changeState} />
     </div>
   );
 }
