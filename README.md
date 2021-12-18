@@ -342,7 +342,7 @@ export default function App() {
     console.log("Mount!") // Mount işlemini böyle yakalıyoruz.
 
     //return () => console.log("Unmount!") "Unmount işlemini böyle yakalıyoruz."
-  }, []) // buradaki köşeli parantez gerçekleşen mount ve unmount olaylarını yakala demek oluyor.
+  }, []) // buradaki köşeli parantez gerçekleşen mount ve unmount olaylarını yakala demek oluyor. (Tanım: Dependency Array)
 
   useEffect(() => {
     console.log("Username Changed!") // Belirli bir state'in tekrar render edilme sürecini böyle yakalıyoruz.
