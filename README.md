@@ -391,6 +391,11 @@ Aktarılmak istenen değerleri global şekilde tutar ve direkt olarak kullanılm
 - [**React Uniq ID Generator Library**](https://www.npmjs.com/package/uniqid)
 - [**Modules CSS "style.module.css"**](https://css-tricks.com/css-modules-part-1-need/)
 
+#### Kütüphaneler:
+- [React Router](https://reactrouter.com/) - Routing işlemleri için.
+- [Yup Validation](https://github.com/jquense/yup) - Validation işlemleri için.
+- [Axios](https://axios-http.com/docs/intro) - HTTP Get Post VB. istek işlemleri için.
+
 #### Önemli Ek Araştırmalar:
 - ReactJS and jQuery Re-Rendering
 
