@@ -389,6 +389,7 @@ Aktarılmak istenen değerleri global şekilde tutar ve direkt olarak kullanılm
 - [**JSX Emmet support | Medium**](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
 - [**React Simple Animation Library | React-Pose**](https://popmotion.io/pose/learn/get-started/)
 - [**React Uniq ID Generator Library**](https://www.npmjs.com/package/uniqid)
+- [**Modules CSS "style.module.css"](https://css-tricks.com/css-modules-part-1-need/)
 
 #### Önemli Ek Araştırmalar:
 - ReactJS and jQuery Re-Rendering
