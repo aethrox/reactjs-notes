@@ -384,10 +384,29 @@ Aktarılmak istenen değerleri global şekilde tutar ve direkt olarak kullanılm
 #### Context konusu için en iyi kaynak:
 - [**Context API**](https://tr.reactjs.org/docs/context.html)
 
-
 ## React Memoization nedir?
 
 ReactJS Component'lerimiz içerisinde yer alan gereksiz "Rendering" işlemlerinin önüne geçmek için kullandığımız yöntemin ismine [**Memoization**](https://tr.reactjs.org/docs/react-api.html#reactmemo) denmektedir.
+
+### useMemo Ne işe yarar?
+
+Öncelikle JavaScript içerisinde yer alan Primitive (İlkel) ve Reference (Referans) tiplerini bilmemiz gerekiyor. 
+Çünkü; "useMemo" Hook yapısını kullanmamızdaki Temel sebep için önemli bir konu..
+
+Kısaca açıklamam gerekirse Primitive tipler bir birine eş değer (===) olabiliyor. Ancak Reference tipler hiç bir zaman bir birine eş değer olmuyor. 
+Çünkü; Bellek üzerindeki Referansları her zaman farklı oluyor. 
+Zaten bu yüzden "Referans" tipli diyoruz. [Dene ve Gör.](https://jsconsole.com/)
+
+Evet, Sorunumuz şu;
+App.js içerisinde bir *Header* component'imizin olduğunu düşünelim ve biz bu *Header* içerisine şöyle bir data gönderelim -> {username: "innthered"} aynı zamanda component içerisine birde `console.log("Re-rendering! Header")` kodumuzu ekleyelim ve App.js içerisinde ise Re-rendering'e sebep olan bir yapımız olsun.
+Örneğin bir sayaç uygulamamız var. Biz bu sayaç'ı her arttırdığımızda şunu fark edecez ki console üzerinde "Header" component'imiz tekrar tekrar Render oluyor.
+
+"Aaa neden ki acaba ?" dediğini duyar gibiyim :)
+Aslında sebebi çok basit yukarıda "Primitive ve Reference" tiplerinden bahsetmiştim hatırlarsan bizim data'mız bir Object idi. İşte bundan dolayı JavaScript bunları farklı biliyor.. içerisindeki "username" değişmese bile.. "Bellek üzerindeki Referansları FARKLI." İşte biz bu gereksiz "Re-rendering"in önüne geçmek için **useMemo** Hook'unu kullanıyoruz.
+
+useMemo'nun yaptığı işlem ise çok basit bize data'mızın *Memoize* edilmiş halini döndürüyor. Ve böylece problemimiz çözülüyor. :)
+
+> Not: "Eee kardeşim bizim buradaki problem ne ?" diyeceksiniz büyük çaplı uygulamalarda performans kaybına sebebiyet verir. Eğer ki bu gibi şeylere dikkat etmezsek.
 
 #### Önemli bağlantılar:
 - [**JSX Emmet support | Medium**](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
