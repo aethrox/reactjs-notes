@@ -387,7 +387,7 @@ Aktarılmak istenen değerleri global şekilde tutar ve direkt olarak kullanılm
 
 ## React Memoization nedir?
 
-ReactJS Component'lerimiz içerisinde yer alan gereksiz "Rendering" işlemlerinin önüne geçmek için kullandığımız bir yönteme [**Memoization**](https://tr.reactjs.org/docs/react-api.html#reactmemo) diyoruz.
+ReactJS Component'lerimiz içerisinde yer alan gereksiz "Rendering" işlemlerinin önüne geçmek için kullandığımız yöntemin ismine [**Memoization**](https://tr.reactjs.org/docs/react-api.html#reactmemo) denmektedir.
 
 #### Önemli bağlantılar:
 - [**JSX Emmet support | Medium**](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
