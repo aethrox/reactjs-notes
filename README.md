@@ -406,7 +406,8 @@ Aslında sebebi çok basit yukarıda "Primitive ve Reference" tiplerinden bahset
 
 useMemo'nun yaptığı işlem ise çok basit bize data'mızın *Memoize* edilmiş halini döndürüyor. Ve böylece problemimiz çözülüyor. :)
 
-> Not: "Eee kardeşim bizim buradaki problem ne ?" diyeceksiniz büyük çaplı uygulamalarda performans kaybına sebebiyet verir. Eğer ki bu gibi şeylere dikkat etmezsek.
+> Not: "Eee biz şimdi bunu yaptık ama neye yaradı ?" diyebilirsiniz. 
+> Büyük çaplı uygulamalarımızdaki performans kaybının önüne geçmiş olduk.
 
 #### Önemli bağlantılar:
 - [**JSX Emmet support | Medium**](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
