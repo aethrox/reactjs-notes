@@ -382,8 +382,12 @@ Aktarılmak istenen değerleri global şekilde tutar ve direkt olarak kullanılm
 * Consumer - Tüketici
 
 #### Context konusu için en iyi kaynak:
-[**Context API**](https://tr.reactjs.org/docs/context.html)
+- [**Context API**](https://tr.reactjs.org/docs/context.html)
 
+
+## React Memoization nedir?
+
+ReactJS Component'lerimiz içerisinde yer alan gereksiz "Rendering" işlemlerinin önüne geçmek için kullandığımız bir yönteme [**Memoization**](https://tr.reactjs.org/docs/react-api.html#reactmemo) diyoruz.
 
 #### Önemli bağlantılar:
 - [**JSX Emmet support | Medium**](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
