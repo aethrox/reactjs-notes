@@ -421,6 +421,7 @@ useMemo'nun yaptığı işlem ise çok basit bize data'mızın *Memoize* edilmi�
 - [React Router](https://reactrouter.com/) - Routing işlemleri için.
 - [Yup Validation](https://github.com/jquense/yup) - Validation işlemleri için.
 - [Axios](https://axios-http.com/docs/intro) - HTTP Get Post VB. istek işlemleri için.
+- [Formik](https://formik.org/) - Karmaşık Form işlemlerimizi basit bir şekilde halletmemiz için.
 
 #### Önemli Ek Araştırmalar:
 - ReactJS and jQuery Re-Rendering
