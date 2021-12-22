@@ -409,6 +409,8 @@ useMemo'nun yaptığı işlem ise çok basit bize data'mızın *Memoize* edilmi�
 > Not: "Eee biz şimdi bunu yaptık ama neye yaradı ?" diyebilirsiniz. 
 > Büyük çaplı uygulamalarımızdaki performans kaybının önüne geçmiş olduk.
 
+[useCallback](https://tr.reactjs.org/docs/hooks-reference.html#usecallback)
+
 #### Önemli bağlantılar:
 - [**JSX Emmet support | Medium**](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
 - [**React Simple Animation Library | React-Pose**](https://popmotion.io/pose/learn/get-started/)
