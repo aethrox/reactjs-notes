@@ -399,7 +399,7 @@ Zaten bu yüzden "Referans" tipli diyoruz. [Dene ve Gör.](https://jsconsole.com
 
 Evet, Sorunumuz şu;
 App.js içerisinde bir *Header* component'imizin olduğunu düşünelim ve biz bu *Header* içerisine şöyle bir data gönderelim -> {username: "innthered"} aynı zamanda component içerisine birde `console.log("Re-rendering! Header")` kodumuzu ekleyelim ve App.js içerisinde ise Re-rendering'e sebep olan bir yapımız olsun.
-Örneğin bir sayaç uygulamamız var. Biz bu sayaç'ı her arttırdığımızda şunu fark edecez ki console üzerinde "Header" component'imiz tekrar tekrar Render oluyor.
+Örneğin bir sayaç uygulamamız var. Biz bu sayac'ı her arttırdığımızda şunu fark edecez ki console üzerinde "Header" component'imiz tekrar tekrar Render oluyor.
 
 "Aaa neden ki acaba ?" dediğini duyar gibiyim :)
 Aslında sebebi çok basit yukarıda "Primitive ve Reference" tiplerinden bahsetmiştim hatırlarsan bizim data'mız bir Object idi. İşte bundan dolayı JavaScript bunları farklı biliyor.. içerisindeki "username" değişmese bile.. "Bellek üzerindeki Referansları FARKLI." İşte biz bu gereksiz "Re-rendering"in önüne geçmek için **useMemo** Hook'unu kullanıyoruz.
