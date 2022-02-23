@@ -260,7 +260,7 @@ export default User;
 
 ## useState Nedir?
 
-Herhangi oluşturduğumuz bir 'useState' function yapısı içerisine verdiğimiz değeri component'imizin içerisinde kullanmamızı ve kolay bir şekilde değiştirmemize olanak sağlar.
+Herhangi oluşturduğumuz bir 'useState' function yapısı içerisine verdiğimiz değeri component'imizin içerisinde kullanmamızı ve kolay bir şekilde değiştirmemize olanak sağlayan bir hook yapısıdır.
 
 *Örnek kullanım:*
 ```jsx
