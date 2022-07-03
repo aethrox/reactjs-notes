@@ -427,7 +427,7 @@ React üzerinde "Unit Test" yazmak. (Düzenleniyor..)
 - [Axios](https://axios-http.com/docs/intro) - HTTP Get Post VB. istek işlemleri için.
 - [Formik](https://formik.org/) - Karmaşık Form işlemlerimizi basit bir şekilde halletmemiz için.
 - [Auto Scroll](https://www.npmjs.com/package/react-scrollable-feed) - Chat uygulaması gibi yapılar otomatik scroll'u aşağıya çekmek için.
-- [React Router](https://react-query.tanstack.com/) - Performant and powerful data synchronization for React
+- [React Query](https://react-query.tanstack.com/) - Performant and powerful data synchronization for React
 
 #### Önemli Ek Araştırmalar:
 - ReactJS and jQuery Re-Rendering
