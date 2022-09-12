@@ -9,7 +9,7 @@ Başlıklar:
 - [Add Some Links](https://reactrouter.com/docs/en/v6/getting-started/tutorial#add-some-links)
 > **Route Ekleme işlemleri için**:
 - [Add Some Routes](https://reactrouter.com/docs/en/v6/getting-started/tutorial#add-some-routes)
-> **Ana component'imizin veya herhangi bir component'imizin kaybolmaması için kullanılabilecek bir route işlemi**:
+> **Ana component veya herhangi bir component kaybolmaması için kullanılabilecek bir route işlemi**:
 - [Nested Routes](https://reactrouter.com/docs/en/v6/getting-started/tutorial#nested-routes)
 > **Mevcut olmayan bir Route yapısına gittiğimizde açılacak 404 sayfası için**:
 - [Adding "Not Match" Route](https://reactrouter.com/docs/en/v6/getting-started/tutorial#adding-a-no-match-route)
