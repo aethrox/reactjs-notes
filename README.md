@@ -406,7 +406,7 @@ Aslında sebebi çok basit yukarıda "Primitive ve Reference" tiplerinden bahset
 
 useMemo'nun yaptığı işlem ise çok basit bize data'mızın *Memoize* edilmiş halini döndürüyor. Ve böylece problemimiz çözülüyor. :)
 
-> Not: "Eee biz şimdi bunu yaptık ama neye yaradı ?" diyebilirsiniz. 
+> Not: Peki neden büyük projelerde bunu yapmamız şart ?
 > Büyük çaplı uygulamalarımızdaki performans kaybının önüne geçmiş olduk.
 
 [useCallback](https://tr.reactjs.org/docs/hooks-reference.html#usecallback)
